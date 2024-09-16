@@ -7,6 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "build:href": "ng build --base-href ./",
+    "build:github": "npm run delete:docs && npm run build:href && npm run copy:dist",
+    "delete:docs": "del docs",
+    "copy:dist": "copyfiles dist/movimiento-sistemas/browser/* ./docs -f",
     "serve:ssr:movimiento-sistemas": "node dist/movimiento-sistemas/server/server.mjs"
   },
   "private": true,
