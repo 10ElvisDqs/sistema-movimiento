@@ -1,0 +1,15 @@
+.hero-section {
+  background-image: url('../../../public/logo.webp');
+  background-size: contain; /* Ajusta la imagen para que no se corte */
+  background-position: center 150px; /* Centramos la imagen y la colocamos 150px abajo del top */
+  background-attachment: fixed; /* Esto asegura que la imagen esté fija mientras haces scroll */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  min-height: 100vh; /* Hace que el fondo ocupe al menos la altura completa de la pantalla */
+  padding-top: 50px; /* Esto da espacio desde el navbar */
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    background-position: center 50px; /* Ajustamos la posición en móviles */
+  }
+}

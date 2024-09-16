@@ -1,0 +1,16 @@
+/* Para la navbar */
+.glass-navbar {
+  background: rgba(29, 29, 29, 0.5); /* Fondo oscuro y translúcido */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Borde ligero */
+  backdrop-filter: blur(10px); /* Desenfoque */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37); /* Sombra difusa */
+}
+
+/* Para los enlaces activos y hover */
+.glass-navbar a {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.glass-navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Efecto hover */
+}
